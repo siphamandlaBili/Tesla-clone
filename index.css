@@ -53,8 +53,12 @@
    background-color: #ffffff;
    z-index: 3;
    height: 100vh;
+   transition: 300ms ;
  }
 
+.show{
+   right:0;
+}
  aside a{
    text-decoration: none;
    margin-bottom: 20px;
@@ -81,10 +85,14 @@ button{
    position: fixed;
    z-index: 2;
    inset: 0;
-   background-color: transparent;
+   background-color: rgba(48, 45, 45, 0.4);
    backdrop-filter: blur(3px);
  }
+
+ .reveal{
+   display:block;
    
+ }
 
  /* sections styling */
 
