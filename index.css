@@ -37,11 +37,54 @@
     display: none;
  }
 
- @media only screen and (min-width: 900px) {
+ @media only screen and (min-width: 1119px) {
     .desktop{
         display:unset;
      } 
  }
+ /* aside menu styling */
+ aside{
+   position: fixed;
+   right: -300px;
+   width: 300px;
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   background-color: #ffffff;
+   z-index: 3;
+   height: 100vh;
+ }
+
+ aside a{
+   text-decoration: none;
+   margin-bottom: 20px;
+   color: black;
+   font-size: 15px;
+ }
+button{
+   cursor: pointer;
+}
+
+ aside button{
+   width: 30px;
+   margin-left: 230px;
+   margin-bottom: 30px;
+   font-size: 30px;
+   font-weight: 100;
+   background: none;
+   border: none;
+  
+ }
+
+ .backdrop{
+   display: none;
+   position: fixed;
+   z-index: 2;
+   inset: 0;
+   background-color: transparent;
+   backdrop-filter: blur(3px);
+ }
+   
 
  /* sections styling */
 
@@ -102,3 +145,42 @@
     background-color: #e4e4e3;
     color: #3a3d41;
 }
+
+@media only screen and (max-width: 720px){
+   .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+  }  
+   
+  .buttons button {
+   height: 40px;
+   width: 260px;
+   border: none;
+   border-radius: 6px;
+   font-size: 17px;
+   font-weight: 100;
+   margin-bottom: 10px;
+} */
+ #yes{
+   position: relative;
+   bottom: 92px;
+   right: 43px;
+   top: 10px; 
+   }
+   header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    position: sticky;
+    top: 32px;
+    bottom: 0;
+    z-index: 2;
+ }
+} 
+
+
